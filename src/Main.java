@@ -16,6 +16,5 @@ public class Main {
         System.out.println("El coste total es: " + tipoTransp.costeTotal(16500) + " euros");
         System.out.println(tipoTransp.tipoEmbalaje(20F, 20F, 20F, 3.5F));
 
-
     }
 }
