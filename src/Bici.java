@@ -1,13 +1,17 @@
 public class Bici implements ITransportable {
     
+    // Constante literal referente al tipo de embalaje palet
     public static final int PALET = 0;
-    
+    // Constante literal referente al tipo de embalaje de carton
     public static final int ENVOLTORIO_CARTON = 1;
-    
+    // Constante literal referente al tipo de embalaje de caja de madera
     public static final int CAJA_MADERA = 2;
 
-
-    
+    /** 
+     * Metodo que recibe un codigo postal @param cp (codigo postal)
+     * Lo compara con otro @param codigoPostal
+     * @return Float reference al coste total del envio
+    */  
     public Float costeTotal(Integer cp) {
         
         Float precio;
@@ -25,6 +29,18 @@ public class Bici implements ITransportable {
         return precio;
     }
     
+    /**
+     * Metodo que recibe las dimensiones de un paquete y su peso
+     * 
+     * @param dimension está formado por la multiplicacion de 3 parametros:
+     * @param dX longitud del paquete
+     * @param dY altura del paquete
+     * @param dZ ancho del paquete
+     * 
+     * @param peso peso del paquete
+     * 
+     * @return Integer que indicará el tipo de embalaje del paquete
+     */
     @Override
     public Integer tipoEmbalaje(Float dX, Float dY, Float dZ, Float peso) {
 
