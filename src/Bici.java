@@ -7,6 +7,7 @@ public class Bici implements ITransportable {
     public static final int CAJA_MADERA = 2;
 
 
+    
     public Float costeTotal(Integer cp) {
         
         Float precio;
