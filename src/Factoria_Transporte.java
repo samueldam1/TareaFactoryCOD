@@ -4,7 +4,10 @@ public class Factoria_Transporte {
     public static final int CAMION = 1;
     // Constante literal que indica que el transporte se efectuará en bicicleta
     public static final int BICI = 2;
-    
+
+    // Constante literal que indica que el transporte se efecturá en barco
+    public static final int BARCO = 3
+
     /**
      * Método que devuelve el tipo de transporte usado
      *
@@ -23,11 +26,15 @@ public class Factoria_Transporte {
 
                 return new Bici();
 
+            case BARCO:
+
+                return new Barco();
+
             default:
                 return null;
 
         }
 
     }
-    
+
 }
